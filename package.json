@@ -1,0 +1,23 @@
+{
+  "name": "ghpage-parcel",
+  "version": "1.0.0",
+  "description": "création d'une github page avec parcel.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "clear": "rm -rf .parcel-cache dist",
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "JULIEN GUILBAUD",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.1",
+    "parcel": "^2.9.1"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "reset-css": "^5.0.1",
+    "sass": "^1.62.1"
+  }
+}
